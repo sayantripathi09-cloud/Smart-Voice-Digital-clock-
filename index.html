@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>AI Intelligent Voice Clock</title>
+<meta charset="UTF-8">
+<title>AI Intelligent Voice Clock</title>
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      text-align: center;
-      padding: 40px;
-      color: #333;
-    }
+<style>
+body{
+  font-family: Arial, sans-serif;
+  background:#f5f5f5;
+  text-align:center;
+  padding:30px;
+  color:#333;
+}
 
-    #clock {
-      font-size: 48px;
-      font-weight: bold;
-      margin: 20px 0;
-    }
+#clock{
+  font-size:48px;
+  font-weight:bold;
+  margin:20px 0;
+}
 
-    .card {
-      background: white;
-      max-width: 900px;
-      margin: auto;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: left;
-    }
+.container{
+  max-width:900px;
+  margin:auto;
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 0 12px rgba(0,0,0,0.1);
+  text-align:left;
+}
 
-    h1, h2 {
-      text-align: center;
-    }
+h1,h2{
+  text-align:center;
+}
 
-    ul {
-      line-height: 1.7;
-    }
+ul{
+  line-height:1.7;
+}
 
-    footer {
-      margin-top: 30px;
-      font-size: 14px;
-      color: gray;
-    }
-  </style>
+.section{
+  margin-top:25px;
+}
+</style>
 </head>
 
 <body>
@@ -51,125 +49,195 @@
 
 <div id="clock">--:--:--</div>
 
-<div class="card">
+<div class="container">
 
-<h2>⭐ Main Features</h2>
+<h2>🕒 CLOCK FEATURES</h2>
+
+<div class="section">
+<h3>🔘 BUTTON FUNCTIONS</h3>
+
+<b>B1 — SET Button</b>
 <ul>
-<li>RTC based accurate Time & Date system</li>
+<li>Single Press → Enter Set Mode / Increment Hour / Minute / Date / Month</li>
+<li>Long Press → Move to next field</li>
+<li>Final Long Press → Save Time & Date to RTC and start clock</li>
+</ul>
+
+<b>B2 — Clock Play / Pause / Voice ON-OFF</b>
+<ul>
+<li>Single Press → Clock Pause / Play toggle</li>
+<li>Long Press → Voice Announcement ON / OFF toggle</li>
+</ul>
+
+<b>B3 — Brightness / Power Control</b>
+<ul>
+<li>Single Press → Change brightness (5 Levels)</li>
+<li>Long Press → Clock Power ON / OFF toggle</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>⏱ TIME & DATE SET MODE</h3>
+<ul>
+<li>SET Mode digits display in Red colour</li>
+<li>Selected field shows Yellow colour</li>
+<li>Colon remains steady ON (no blinking)</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>🎨 AUTO COLOUR CHANGING DISPLAY</h3>
+<ul>
+<li>Colour changes automatically every 4 minutes</li>
+<li>Total 15 colour transitions</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>💡 SMART BRIGHTNESS SYSTEM</h3>
+<ul>
+<li>6:00 AM – 6:00 PM → Day Brightness (Level 50)</li>
+<li>6:00 PM – 6:00 AM → Night Brightness (Level 25)</li>
+<li>Manual override via Brightness button</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>📅 AUTO DISPLAY SYSTEM</h3>
+<ul>
+<li>Time → 6 seconds</li>
+<li>Date → 2 seconds</li>
+<li>Temperature → 5 seconds</li>
+<li>Humidity → 2 seconds</li>
+</ul>
+</div>
+
+<div class="section">
+<h3>⭐ MAIN FEATURES</h3>
+
+<h4>⏰ Time & Date System</h4>
+<ul>
+<li>RTC-based accurate real-time clock</li>
 <li>Automatic weekday calculation</li>
 <li>Leap year auto correction</li>
 <li>Automatic calendar adjustment</li>
-<li>Power restart time retention</li>
+<li>Time retained after power restart</li>
 </ul>
 
-<h2>🔊 Intelligent Voice Announcement</h2>
+<h4>🔊 Intelligent Voice Announcement</h4>
 <ul>
 <li>DFPlayer Mini voice announcement system</li>
-<li>Scheduled time-based audio playback</li>
+<li>Scheduled audio playback</li>
 <li>Correct weekday voice output</li>
 <li>Custom recorded voice support</li>
-<li>Smart automatic announcement logic</li>
+<li>Automatic announcement logic</li>
 </ul>
 
-<h2>🌙 Smart Night Silent Mode</h2>
+<h4>🌙 Smart Night Silent Mode</h4>
 <ul>
 <li>Automatic voice mute from 12:00 AM – 6:00 AM</li>
+<li>Auto ON/OFF operation</li>
 <li>No user interaction required</li>
 </ul>
 
-<h2>💡 Smart Display System</h2>
+<h4>🔋 Battery Mode Intelligence</h4>
 <ul>
-<li>Auto colour changing display (15 colours)</li>
-<li>Colour change every 4 minutes</li>
-<li>Auto brightness control (Day/Night)</li>
-<li>Manual brightness override</li>
-</ul>
-
-<h2>📅 Auto Information Display</h2>
-<ul>
-<li>Time display: 6 seconds</li>
-<li>Date display: 2 seconds</li>
-<li>Temperature display: 5 seconds</li>
-<li>Humidity display: 2 seconds</li>
-</ul>
-
-<h2>🔋 Battery Intelligence</h2>
-<ul>
-<li>Battery mode detection</li>
+<li>Automatic battery mode detection</li>
 <li>Power saving operation</li>
-<li>Battery status colour indication</li>
-<li>Deep sleep protection at low battery</li>
+<li>Temp & humidity disabled in battery mode</li>
 </ul>
 
-<h2>🔧 Auto Repair System</h2>
+<b>Battery Status Indicator</b>
+<ul>
+<li>Green → Fully Charged</li>
+<li>Blue → Charging</li>
+<li>Yellow → Medium Battery</li>
+<li>Red → Low Battery Warning</li>
+<li>Deep Sleep at critical battery level</li>
+</ul>
+
+<h4>🧠 AI-Style Logic System</h4>
+<ul>
+<li>Condition-based decision making</li>
+<li>Time-aware behaviour</li>
+<li>Automatic system state control</li>
+<li>Smart audio triggering</li>
+</ul>
+
+<h4>🔧 Auto Repair / Self-Recovery</h4>
 <ul>
 <li>Auto recovery from system freeze</li>
-<li>Runtime stability protection</li>
-<li>Designed for long-term operation</li>
+<li>Runtime error protection</li>
+<li>Stable long-term operation</li>
 </ul>
 
-<h2>🔈 Professional Audio Design</h2>
+<h4>🔈 Professional Audio System</h4>
 <ul>
 <li>DFPlayer DAC audio output used</li>
 <li>External amplifier supported</li>
-<li>Clean audio signal routing</li>
-<li>Speaker IC protection</li>
+<li>Clean audio routing</li>
+<li>Speaker protection design</li>
 </ul>
+</div>
 
-<h2>🔌 Hardware Used</h2>
+<div class="section">
+<h3>🔌 HARDWARE USED</h3>
 <ul>
-<li>Arduino UNO Microcontroller</li>
+<li>Arduino UNO</li>
 <li>PCF8563 RTC Module</li>
 <li>DFPlayer Mini MP3 Module</li>
 <li>WS2812 LED Display</li>
-<li>DHT11 Temperature & Humidity Sensor</li>
+<li>DHT11 Sensor</li>
 <li>18650 Li-ion Battery</li>
 <li>TP4056 Charging Module</li>
 <li>5V Power Regulation Circuit</li>
 <li>External Audio Amplifier</li>
+<li>Resistors & Diodes</li>
 </ul>
+</div>
 
-<h2>💻 Software</h2>
+<div class="section">
+<h3>💻 SOFTWARE & PROGRAMMING</h3>
 <ul>
 <li>Custom Embedded C++ (Arduino IDE)</li>
 <li>Fully custom logic design</li>
+<li>Manual weekday correction algorithm</li>
 <li>Power-aware programming</li>
-<li>Time-condition automation</li>
 </ul>
+</div>
 
-<h2>🛠 Development Details</h2>
+<div class="section">
+<h3>🛠 DEVELOPMENT DETAILS</h3>
 <ul>
 <li>Development Time: ~2.5 Months</li>
 <li>Designed & Built By: <b>Sayan Tripathi</b></li>
-<li>Project Type: Handmade Embedded Electronics Project</li>
+<li>Type: Handmade Embedded Electronics Project</li>
 <li>Category: Smart Embedded Intelligent Device</li>
 </ul>
+</div>
 
-<h2>🎯 Project Goal</h2>
+<div class="section">
+<h3>🎯 PROJECT GOAL</h3>
 <ul>
-<li>Automatic intelligent clock operation</li>
+<li>Automatic intelligent operation</li>
 <li>Minimal human interaction</li>
 <li>Reliable long-term performance</li>
 <li>Smart behaviour based automation</li>
 </ul>
+</div>
 
 </div>
 
-<footer>
-Designed & Developed by Sayan Tripathi • AI Intelligent Voice Clock Project
-</footer>
-
 <script>
-  function updateClock() {
-    const now = new Date();
-    const h = String(now.getHours()).padStart(2,'0');
-    const m = String(now.getMinutes()).padStart(2,'0');
-    const s = String(now.getSeconds()).padStart(2,'0');
-    document.getElementById("clock").innerText = h + ":" + m + ":" + s;
-  }
-
-  setInterval(updateClock, 1000);
-  updateClock();
+function updateClock(){
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2,'0');
+  const m = String(now.getMinutes()).padStart(2,'0');
+  const s = String(now.getSeconds()).padStart(2,'0');
+  document.getElementById("clock").innerText = h+":"+m+":"+s;
+}
+setInterval(updateClock,1000);
+updateClock();
 </script>
 
 </body>
